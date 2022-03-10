@@ -57,8 +57,8 @@ export default function HowToLogin() {
                     3. 管理画面へログインできるようになります。
                 </Typography>
                 <Typography sx={{ mb: 3 }}>
-                    <Link target="_blank" href="https://ayasugi-staffpage.s3.ap-northeast-1.amazonaws.com/index.html">
-                        https://ayasugi-staffpage.s3.ap-northeast-1.amazonaws.com/index.html
+                    <Link target="_blank" href="https://rentalserver-staffpage.s3.ap-northeast-1.amazonaws.com/index.html">
+                        https://rentalserver-staffpage.s3.ap-northeast-1.amazonaws.com/index.html
                     </Link>
                 </Typography>
                 <Divider />

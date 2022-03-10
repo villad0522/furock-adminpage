@@ -5,7 +5,7 @@ import actions from '../../actions';
 
 export default function* getVersionDatas() {
     const oneTimeId = yield select(state => state?.auth?.oneTimeId);
-    let url = 'https://wvdkbseaqd.execute-api.ap-northeast-1.amazonaws.com/production/s3/ayasugi-json/versions.json?oneTimeId=' + oneTimeId;
+    let url = 'https://epn63s2g5a.execute-api.ap-northeast-1.amazonaws.com/production/s3/rentalserver-json/versions.json?oneTimeId=' + oneTimeId;
     //
     console.log("ロード開始 " + url);
     try {

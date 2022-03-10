@@ -10,7 +10,7 @@ export default function* push() {
     console.log("プッシュ開始");
     try {
         const res = yield axios.post(
-            'https://wvdkbseaqd.execute-api.ap-northeast-1.amazonaws.com/production/push',
+            'https://epn63s2g5a.execute-api.ap-northeast-1.amazonaws.com/production/push',
             {
                 oneTimeId,
                 operator,

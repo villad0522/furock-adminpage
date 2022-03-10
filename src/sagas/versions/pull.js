@@ -8,7 +8,7 @@ export default function* pull({ payload: { version } }) {
     console.log("プル開始");
     try {
         const res = yield axios.post(
-            'https://wvdkbseaqd.execute-api.ap-northeast-1.amazonaws.com/production/pull',
+            'https://epn63s2g5a.execute-api.ap-northeast-1.amazonaws.com/production/pull',
             {
                 oneTimeId,
                 version,

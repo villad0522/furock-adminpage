@@ -10,7 +10,7 @@ export default function* postJsonItems(fileName) {
     console.log("アップロード開始");
     try {
         const res = yield axios.post(
-            'https://wvdkbseaqd.execute-api.ap-northeast-1.amazonaws.com/production/s3/ayasugi-json/draft/'
+            'https://epn63s2g5a.execute-api.ap-northeast-1.amazonaws.com/production/s3/rentalserver-json/draft/'
             + fileName + '?oneTimeId=' + oneTimeId,
             JSON.stringify(categories),
             {

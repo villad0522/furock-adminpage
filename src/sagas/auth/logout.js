@@ -11,7 +11,7 @@ export default function* logout() {
     console.log("ログアウト開始");
     try {
         const res = yield axios.delete(
-            'https://wvdkbseaqd.execute-api.ap-northeast-1.amazonaws.com/production/auth?'
+            'https://epn63s2g5a.execute-api.ap-northeast-1.amazonaws.com/production/auth?'
             + 'oneTimeId=' + oneTimeId
         );
         if (typeof res.data === "string") {

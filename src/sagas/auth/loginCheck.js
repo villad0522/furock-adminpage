@@ -9,7 +9,7 @@ export default function* loginCheck(oneTimeId) {
     console.log("ログインチェック開始");
     try {
         const res = yield axios.get(
-            'https://wvdkbseaqd.execute-api.ap-northeast-1.amazonaws.com/production/auth?'
+            'https://epn63s2g5a.execute-api.ap-northeast-1.amazonaws.com/production/auth?'
             + 'oneTimeId=' + oneTimeId
         );
         if (typeof res.data === "string") {
