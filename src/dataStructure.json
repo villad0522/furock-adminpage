@@ -1,0 +1,2185 @@
+{
+    "一般設定": [
+        {
+            "key": "title",
+            "type": "TEXT_FIELD",
+            "autoFocus": true,
+            "label": "ページタイトル"
+        },
+        {
+            "key": "subtitle",
+            "type": "TEXT_FIELD",
+            "label": "サブタイトル"
+        },
+        {
+            "key": "topLogo",
+            "type": "IMAGE_UPLOADER",
+            "label": "お店のロゴ",
+            "width": 6
+        },
+        {
+            "key": "text",
+            "type": "TEXT_FIELD",
+            "label": "文章",
+            "multiline": true,
+            "rows": 8
+        },
+        {
+            "key": "instagram",
+            "type": "TEXT_FIELD",
+            "label": "インスタグラムのURL"
+        },
+        {
+            "key": "facebook",
+            "type": "TEXT_FIELD",
+            "label": "フェイスブックのURL"
+        },
+        {
+            "key": "twitter",
+            "type": "TEXT_FIELD",
+            "label": "ツイッターのURL"
+        },
+        {
+            "key": "line",
+            "type": "TEXT_FIELD",
+            "label": "LINEのURL"
+        },
+        {
+            "key": "googleMap",
+            "type": "TEXT_FIELD",
+            "label": "グーグルマップのURL"
+        },
+        {
+            "key": "stock",
+            "type": "TEXT_FIELD",
+            "label": "「在庫多数」と表示する下限値",
+            "defaultValue": 10
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "送料"
+        },
+        {
+            "key": "postage_price",
+            "type": "TEXT_FIELD",
+            "label": "１回あたりの送料",
+            "defaultValue": 790,
+            "width": 6
+        },
+        {
+            "key": "postage_weight",
+            "type": "TEXT_FIELD",
+            "label": "１回あたりの最大重量(g)",
+            "defaultValue": 1000,
+            "width": 6
+        }
+    ],
+    "ページ（パソコン）": [
+        {
+            "type": "HEADLINE",
+            "label": "ページ全体の背景の色"
+        },
+        {
+            "key": "bgColor",
+            "type": "SLIDER",
+            "defaultValue": 255,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "タイトル"
+        },
+        {
+            "key": "title",
+            "type": "TEXT_FIELD",
+            "autoFocus": true,
+            "multiline": true,
+            "rows": 2
+        },
+        {
+            "key": "title_size",
+            "type": "SLIDER",
+            "label": "文字のサイズ",
+            "defaultValue": 40,
+            "min": 5,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 5,
+                    "label": "5px"
+                },
+                {
+                    "value": 50,
+                    "label": "50px"
+                },
+                {
+                    "value": 100,
+                    "label": "100px"
+                }
+            ]
+        },
+        {
+            "key": "title_color",
+            "type": "SLIDER",
+            "label": "文字の色",
+            "defaultValue": 0,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "title_opacity",
+            "type": "SLIDER",
+            "label": "透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "title_bgColor",
+            "type": "SLIDER",
+            "label": "背景の色",
+            "defaultValue": 255,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "title_bgOpacity",
+            "type": "SLIDER",
+            "label": "背景の透明度",
+            "defaultValue": 0.8,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "title_X",
+            "type": "SLIDER",
+            "label": "x座標",
+            "defaultValue": -30,
+            "min": -50,
+            "max": 50,
+            "marks": [
+                {
+                    "value": -50,
+                    "label": "左"
+                },
+                {
+                    "value": 0,
+                    "label": "中央"
+                },
+                {
+                    "value": 50,
+                    "label": "右"
+                }
+            ]
+        },
+        {
+            "key": "title_Y",
+            "type": "SLIDER",
+            "label": "y座標",
+            "defaultValue": 30,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "上"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "下"
+                }
+            ]
+        },
+        {
+            "key": "title_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": 600,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "title_moveY",
+            "type": "SLIDER",
+            "label": "y座標の移動スピード",
+            "defaultValue": 0,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "下へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "上へ"
+                }
+            ]
+        },
+        {
+            "key": "title_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": false
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "タイトルの下線"
+        },
+        {
+            "key": "underline_color",
+            "type": "SLIDER",
+            "label": "線の色",
+            "defaultValue": 0,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "underline_opacity",
+            "type": "SLIDER",
+            "label": "透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "underline_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": -600,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "underline_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": false
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "文章"
+        },
+        {
+            "key": "text",
+            "type": "TEXT_FIELD",
+            "multiline": true,
+            "rows": 16
+        },
+        {
+            "key": "text_size",
+            "type": "SLIDER",
+            "label": "文字のサイズ",
+            "defaultValue": 16,
+            "min": 5,
+            "max": 50,
+            "marks": [
+                {
+                    "value": 5,
+                    "label": "5px"
+                },
+                {
+                    "value": 50,
+                    "label": "50px"
+                }
+            ],
+            "width": 6
+        },
+        {
+            "key": "text_color",
+            "type": "SLIDER",
+            "label": "文字の色",
+            "defaultValue": 0,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "text_opacity",
+            "type": "SLIDER",
+            "label": "透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "text_bgColor",
+            "type": "SLIDER",
+            "label": "背景の色",
+            "defaultValue": 255,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "text_bgOpacity",
+            "type": "SLIDER",
+            "label": "背景の透明度",
+            "defaultValue": 0.8,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "text_X",
+            "type": "SLIDER",
+            "label": "x座標",
+            "defaultValue": 5,
+            "min": -50,
+            "max": 50,
+            "marks": [
+                {
+                    "value": -50,
+                    "label": "左"
+                },
+                {
+                    "value": 0,
+                    "label": "中央"
+                },
+                {
+                    "value": 50,
+                    "label": "右"
+                }
+            ]
+        },
+        {
+            "key": "text_Y",
+            "type": "SLIDER",
+            "label": "y座標",
+            "defaultValue": 45,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "上"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "下"
+                }
+            ]
+        },
+        {
+            "key": "text_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": 0,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "text_moveY",
+            "type": "SLIDER",
+            "label": "y座標の移動スピード",
+            "defaultValue": 600,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "下へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "上へ"
+                }
+            ]
+        },
+        {
+            "key": "text_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": true
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "画像（１枚目）"
+        },
+        {
+            "key": "image1",
+            "type": "IMAGE_UPLOADER",
+            "width": 6
+        },
+        {
+            "key": "image1_size",
+            "type": "SLIDER",
+            "label": "画像の高さ",
+            "defaultValue": 50,
+            "min": 2,
+            "max": 200,
+            "step": 2,
+            "marks": [
+                {
+                    "value": 2,
+                    "label": "2%"
+                },
+                {
+                    "value": 100,
+                    "label": "100%（画面の高さと同じ）"
+                },
+                {
+                    "value": 200,
+                    "label": "200%"
+                }
+            ]
+        },
+        {
+            "key": "image1_borderRadius",
+            "type": "SLIDER",
+            "label": "四隅の角を丸める",
+            "defaultValue": 16,
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "丸めない"
+                },
+                {
+                    "value": 200,
+                    "label": "丸める"
+                }
+            ]
+        },
+        {
+            "key": "image1_opacity",
+            "type": "SLIDER",
+            "label": "画像の透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "image1_X",
+            "type": "SLIDER",
+            "label": "x座標",
+            "defaultValue": 55,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "左"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "右"
+                }
+            ]
+        },
+        {
+            "key": "image1_Y",
+            "type": "SLIDER",
+            "label": "y座標",
+            "defaultValue": 1,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "上"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "下"
+                }
+            ]
+        },
+        {
+            "key": "image1_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": 0,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "image1_moveY",
+            "type": "SLIDER",
+            "label": "y座標の移動スピード",
+            "defaultValue": 400,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "下へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "上へ"
+                }
+            ]
+        },
+        {
+            "key": "image1_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": false
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "画像（２枚目）"
+        },
+        {
+            "key": "image2",
+            "type": "IMAGE_UPLOADER",
+            "width": 6
+        },
+        {
+            "key": "image2_size",
+            "type": "SLIDER",
+            "label": "画像の高さ",
+            "defaultValue": 34,
+            "min": 2,
+            "max": 200,
+            "step": 2,
+            "marks": [
+                {
+                    "value": 2,
+                    "label": "2%"
+                },
+                {
+                    "value": 100,
+                    "label": "100%（画面の高さと同じ）"
+                },
+                {
+                    "value": 200,
+                    "label": "200%"
+                }
+            ]
+        },
+        {
+            "key": "image2_borderRadius",
+            "type": "SLIDER",
+            "label": "四隅の角を丸める",
+            "defaultValue": 16,
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "丸めない"
+                },
+                {
+                    "value": 200,
+                    "label": "丸める"
+                }
+            ]
+        },
+        {
+            "key": "image2_opacity",
+            "type": "SLIDER",
+            "label": "画像の透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "image2_X",
+            "type": "SLIDER",
+            "label": "x座標",
+            "defaultValue": 5,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "左"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "右"
+                }
+            ]
+        },
+        {
+            "key": "image2_Y",
+            "type": "SLIDER",
+            "label": "y座標",
+            "defaultValue": 60,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "上"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "下"
+                }
+            ]
+        },
+        {
+            "key": "image2_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": 0,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "image2_moveY",
+            "type": "SLIDER",
+            "label": "y座標の移動スピード",
+            "defaultValue": 600,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "image2_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": false
+        }
+    ],
+    "ページ（スマホ）": [
+        {
+            "type": "HEADLINE",
+            "label": "ページ全体の背景の色"
+        },
+        {
+            "key": "bgColor",
+            "type": "SLIDER",
+            "defaultValue": 255,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "タイトル"
+        },
+        {
+            "key": "title",
+            "type": "TEXT_FIELD",
+            "autoFocus": true,
+            "multiline": true,
+            "rows": 2
+        },
+        {
+            "key": "title_size",
+            "type": "SLIDER",
+            "label": "文字のサイズ",
+            "defaultValue": 40,
+            "min": 5,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 5,
+                    "label": "5px"
+                },
+                {
+                    "value": 50,
+                    "label": "50px"
+                },
+                {
+                    "value": 100,
+                    "label": "100px"
+                }
+            ]
+        },
+        {
+            "key": "title_color",
+            "type": "SLIDER",
+            "label": "文字の色",
+            "defaultValue": 0,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "title_opacity",
+            "type": "SLIDER",
+            "label": "透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "title_bgColor",
+            "type": "SLIDER",
+            "label": "背景の色",
+            "defaultValue": 255,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "title_bgOpacity",
+            "type": "SLIDER",
+            "label": "背景の透明度",
+            "defaultValue": 0.8,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "title_X",
+            "type": "SLIDER",
+            "label": "x座標",
+            "defaultValue": -30,
+            "min": -50,
+            "max": 50,
+            "marks": [
+                {
+                    "value": -50,
+                    "label": "左"
+                },
+                {
+                    "value": 0,
+                    "label": "中央"
+                },
+                {
+                    "value": 50,
+                    "label": "右"
+                }
+            ]
+        },
+        {
+            "key": "title_Y",
+            "type": "SLIDER",
+            "label": "y座標",
+            "defaultValue": 30,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "上"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "下"
+                }
+            ]
+        },
+        {
+            "key": "title_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": 600,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "title_moveY",
+            "type": "SLIDER",
+            "label": "y座標の移動スピード",
+            "defaultValue": 0,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "下へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "上へ"
+                }
+            ]
+        },
+        {
+            "key": "title_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": false
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "タイトルの下線"
+        },
+        {
+            "key": "underline_color",
+            "type": "SLIDER",
+            "label": "線の色",
+            "defaultValue": 0,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "underline_opacity",
+            "type": "SLIDER",
+            "label": "透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "underline_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": -600,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "underline_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": false
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "文章"
+        },
+        {
+            "key": "text",
+            "type": "TEXT_FIELD",
+            "multiline": true,
+            "rows": 16
+        },
+        {
+            "key": "text_size",
+            "type": "SLIDER",
+            "label": "文字のサイズ",
+            "defaultValue": 16,
+            "min": 5,
+            "max": 50,
+            "marks": [
+                {
+                    "value": 5,
+                    "label": "5px"
+                },
+                {
+                    "value": 50,
+                    "label": "50px"
+                }
+            ],
+            "width": 6
+        },
+        {
+            "key": "text_color",
+            "type": "SLIDER",
+            "label": "文字の色",
+            "defaultValue": 0,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "text_opacity",
+            "type": "SLIDER",
+            "label": "透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "text_bgColor",
+            "type": "SLIDER",
+            "label": "背景の色",
+            "defaultValue": 255,
+            "min": 0,
+            "max": 255,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "黒"
+                },
+                {
+                    "value": 127,
+                    "label": "灰"
+                },
+                {
+                    "value": 255,
+                    "label": "白"
+                }
+            ]
+        },
+        {
+            "key": "text_bgOpacity",
+            "type": "SLIDER",
+            "label": "背景の透明度",
+            "defaultValue": 0.8,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "text_X",
+            "type": "SLIDER",
+            "label": "x座標",
+            "defaultValue": 5,
+            "min": -50,
+            "max": 50,
+            "marks": [
+                {
+                    "value": -50,
+                    "label": "左"
+                },
+                {
+                    "value": 0,
+                    "label": "中央"
+                },
+                {
+                    "value": 50,
+                    "label": "右"
+                }
+            ]
+        },
+        {
+            "key": "text_Y",
+            "type": "SLIDER",
+            "label": "y座標",
+            "defaultValue": 45,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "上"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "下"
+                }
+            ]
+        },
+        {
+            "key": "text_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": 0,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "text_moveY",
+            "type": "SLIDER",
+            "label": "y座標の移動スピード",
+            "defaultValue": 600,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "下へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "上へ"
+                }
+            ]
+        },
+        {
+            "key": "text_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": true
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "画像（１枚目）"
+        },
+        {
+            "key": "image1",
+            "type": "IMAGE_UPLOADER",
+            "width": 6
+        },
+        {
+            "key": "image1_size",
+            "type": "SLIDER",
+            "label": "画像の高さ",
+            "defaultValue": 50,
+            "min": 2,
+            "max": 200,
+            "step": 2,
+            "marks": [
+                {
+                    "value": 2,
+                    "label": "2%"
+                },
+                {
+                    "value": 100,
+                    "label": "100%（画面の高さと同じ）"
+                },
+                {
+                    "value": 200,
+                    "label": "200%"
+                }
+            ]
+        },
+        {
+            "key": "image1_borderRadius",
+            "type": "SLIDER",
+            "label": "四隅の角を丸める",
+            "defaultValue": 16,
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "丸めない"
+                },
+                {
+                    "value": 200,
+                    "label": "丸める"
+                }
+            ]
+        },
+        {
+            "key": "image1_opacity",
+            "type": "SLIDER",
+            "label": "画像の透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "image1_X",
+            "type": "SLIDER",
+            "label": "x座標",
+            "defaultValue": 55,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "左"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "右"
+                }
+            ]
+        },
+        {
+            "key": "image1_Y",
+            "type": "SLIDER",
+            "label": "y座標",
+            "defaultValue": 1,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "上"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "下"
+                }
+            ]
+        },
+        {
+            "key": "image1_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": 0,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "image1_moveY",
+            "type": "SLIDER",
+            "label": "y座標の移動スピード",
+            "defaultValue": 400,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "下へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "上へ"
+                }
+            ]
+        },
+        {
+            "key": "image1_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": false
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "画像（２枚目）"
+        },
+        {
+            "key": "image2",
+            "type": "IMAGE_UPLOADER",
+            "width": 6
+        },
+        {
+            "key": "image2_size",
+            "type": "SLIDER",
+            "label": "画像の高さ",
+            "defaultValue": 34,
+            "min": 2,
+            "max": 200,
+            "step": 2,
+            "marks": [
+                {
+                    "value": 2,
+                    "label": "2%"
+                },
+                {
+                    "value": 100,
+                    "label": "100%（画面の高さと同じ）"
+                },
+                {
+                    "value": 200,
+                    "label": "200%"
+                }
+            ]
+        },
+        {
+            "key": "image2_borderRadius",
+            "type": "SLIDER",
+            "label": "四隅の角を丸める",
+            "defaultValue": 16,
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "丸めない"
+                },
+                {
+                    "value": 200,
+                    "label": "丸める"
+                }
+            ]
+        },
+        {
+            "key": "image2_opacity",
+            "type": "SLIDER",
+            "label": "画像の透明度",
+            "defaultValue": 1,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "透明"
+                },
+                {
+                    "value": 0.5,
+                    "label": "半透明"
+                },
+                {
+                    "value": 1.0,
+                    "label": "不透明"
+                }
+            ]
+        },
+        {
+            "key": "image2_X",
+            "type": "SLIDER",
+            "label": "x座標",
+            "defaultValue": 5,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "左"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "右"
+                }
+            ]
+        },
+        {
+            "key": "image2_Y",
+            "type": "SLIDER",
+            "label": "y座標",
+            "defaultValue": 60,
+            "min": 0,
+            "max": 100,
+            "marks": [
+                {
+                    "value": 0,
+                    "label": "上"
+                },
+                {
+                    "value": 50,
+                    "label": "中央"
+                },
+                {
+                    "value": 100,
+                    "label": "下"
+                }
+            ]
+        },
+        {
+            "key": "image2_moveX",
+            "type": "SLIDER",
+            "label": "x座標の移動スピード",
+            "defaultValue": 0,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "image2_moveY",
+            "type": "SLIDER",
+            "label": "y座標の移動スピード",
+            "defaultValue": 600,
+            "min": -4000,
+            "max": 4000,
+            "marks": [
+                {
+                    "value": -4000,
+                    "label": "左へ"
+                },
+                {
+                    "value": 0,
+                    "label": "動かない"
+                },
+                {
+                    "value": 4000,
+                    "label": "右へ"
+                }
+            ]
+        },
+        {
+            "key": "image2_fadeout",
+            "type": "SWITCH",
+            "label": "徐々に透明になって消える",
+            "defaultValue": false
+        }
+    ],
+    "商品": [
+        {
+            "key": "title",
+            "type": "TEXT_FIELD",
+            "autoFocus": true,
+            "label": "商品名",
+            "multiline": true,
+            "rows": 3
+        },
+        {
+            "key": "price",
+            "type": "TEXT_FIELD",
+            "label": "税込価格"
+        },
+        {
+            "key": "maxNum",
+            "type": "TEXT_FIELD",
+            "label": "お一人様〇個まで",
+            "defaultValue": 50,
+            "width": 6
+        },
+        {
+            "key": "weight",
+            "type": "TEXT_FIELD",
+            "label": "重さ(g)（送料計算のみに使用）",
+            "defaultValue": 200,
+            "width": 6
+        },
+        {
+            "key": "overview",
+            "type": "TEXT_FIELD",
+            "label": "簡易説明文",
+            "multiline": true,
+            "rows": 2
+        },
+        {
+            "key": "text",
+            "type": "TEXT_FIELD",
+            "label": "説明文",
+            "multiline": true,
+            "rows": 18
+        },
+        {
+            "key": "image1",
+            "type": "IMAGE_UPLOADER",
+            "label": "画像１",
+            "width": 6
+        },
+        {
+            "key": "image2",
+            "type": "IMAGE_UPLOADER",
+            "label": "画像２",
+            "width": 6
+        },
+        {
+            "key": "image3",
+            "type": "IMAGE_UPLOADER",
+            "label": "画像３",
+            "width": 6
+        },
+        {
+            "key": "image4",
+            "type": "IMAGE_UPLOADER",
+            "label": "画像４",
+            "width": 6
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "詳細"
+        },
+        {
+            "key": "list1_key",
+            "type": "TEXT_FIELD",
+            "label": "項目名",
+            "defaultValue": "原材料",
+            "width": 6
+        },
+        {
+            "key": "list1_text",
+            "type": "TEXT_FIELD",
+            "label": "文章",
+            "defaultValue": "コーヒー豆",
+            "width": 6
+        },
+        {
+            "key": "list2_key",
+            "type": "TEXT_FIELD",
+            "label": "項目名",
+            "defaultValue": "豆原産国",
+            "width": 6
+        },
+        {
+            "key": "list2_text",
+            "type": "TEXT_FIELD",
+            "label": "文章",
+            "defaultValue": "",
+            "width": 6
+        },
+        {
+            "key": "list3_key",
+            "type": "TEXT_FIELD",
+            "label": "項目名",
+            "defaultValue": "保存方法",
+            "width": 6
+        },
+        {
+            "key": "list3_text",
+            "type": "TEXT_FIELD",
+            "label": "文章",
+            "defaultValue": "密閉容器に入れて冷蔵または冷凍保存",
+            "width": 6
+        },
+        {
+            "key": "list4_key",
+            "type": "TEXT_FIELD",
+            "label": "項目名",
+            "defaultValue": "賞味期限",
+            "width": 6
+        },
+        {
+            "key": "list4_text",
+            "type": "TEXT_FIELD",
+            "label": "文章",
+            "defaultValue": "到着後およそ半年",
+            "width": 6
+        },
+        {
+            "key": "list5_key",
+            "type": "TEXT_FIELD",
+            "label": "項目名",
+            "defaultValue": "内容量",
+            "width": 6
+        },
+        {
+            "key": "list5_text",
+            "type": "TEXT_FIELD",
+            "label": "文章",
+            "defaultValue": "200g",
+            "width": 6
+        },
+        {
+            "key": "list6_key",
+            "type": "TEXT_FIELD",
+            "label": "項目名",
+            "defaultValue": "",
+            "width": 6
+        },
+        {
+            "key": "list6_text",
+            "type": "TEXT_FIELD",
+            "label": "文章",
+            "defaultValue": "",
+            "width": 6
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "オプションA"
+        },
+        {
+            "key": "optionA_name",
+            "type": "TEXT_FIELD",
+            "label": "オプション名",
+            "defaultValue": "挽き具合"
+        },
+        {
+            "key": "optionA_1",
+            "type": "TEXT_FIELD",
+            "label": "選択肢１",
+            "defaultValue": "豆のまま",
+            "width": 6
+        },
+        {
+            "key": "optionA_1_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "defaultValue": 0,
+            "width": 6
+        },
+        {
+            "key": "optionA_2",
+            "type": "TEXT_FIELD",
+            "label": "選択肢２",
+            "defaultValue": "粗挽き",
+            "width": 6
+        },
+        {
+            "key": "optionA_2_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "defaultValue": 0,
+            "width": 6
+        },
+        {
+            "key": "optionA_3",
+            "type": "TEXT_FIELD",
+            "label": "選択肢３",
+            "defaultValue": "中挽き",
+            "width": 6
+        },
+        {
+            "key": "optionA_3_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "defaultValue": 0,
+            "width": 6
+        },
+        {
+            "key": "optionA_4",
+            "type": "TEXT_FIELD",
+            "label": "選択肢４",
+            "defaultValue": "細挽き",
+            "width": 6
+        },
+        {
+            "key": "optionA_4_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "defaultValue": 0,
+            "width": 6
+        },
+        {
+            "key": "optionA_5",
+            "type": "TEXT_FIELD",
+            "label": "選択肢５",
+            "width": 6
+        },
+        {
+            "key": "optionA_5_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionA_6",
+            "type": "TEXT_FIELD",
+            "label": "選択肢６",
+            "width": 6
+        },
+        {
+            "key": "optionA_6_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "オプションB"
+        },
+        {
+            "key": "optionB_name",
+            "type": "TEXT_FIELD",
+            "label": "オプション名"
+        },
+        {
+            "key": "optionB_1",
+            "type": "TEXT_FIELD",
+            "label": "選択肢１",
+            "width": 6
+        },
+        {
+            "key": "optionB_1_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_2",
+            "type": "TEXT_FIELD",
+            "label": "選択肢２",
+            "width": 6
+        },
+        {
+            "key": "optionB_2_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_3",
+            "type": "TEXT_FIELD",
+            "label": "選択肢３",
+            "width": 6
+        },
+        {
+            "key": "optionB_3_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_4",
+            "type": "TEXT_FIELD",
+            "label": "選択肢４",
+            "width": 6
+        },
+        {
+            "key": "optionB_4_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_5",
+            "type": "TEXT_FIELD",
+            "label": "選択肢５",
+            "width": 6
+        },
+        {
+            "key": "optionB_5_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_6",
+            "type": "TEXT_FIELD",
+            "label": "選択肢６",
+            "width": 6
+        },
+        {
+            "key": "optionB_6_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        }
+    ]
+}
