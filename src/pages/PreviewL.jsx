@@ -7,7 +7,7 @@ export default function Preview({ version }) {
         <iframe
             title="preview small"
             src={
-                "https://ayasugi-homepage.s3.ap-northeast-1.amazonaws.com/index.html?version="
+                "https://rentalserver-homepage.s3.ap-northeast-1.amazonaws.com/index.html?version="
                 + version + "&oneTimeId=" + oneTimeId
             }
             style={{
