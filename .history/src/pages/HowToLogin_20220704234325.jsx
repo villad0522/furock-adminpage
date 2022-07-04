@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider';
 
 import googleStoreImage from '../img/140848.jpg';
 import appImage from '../img/140849.jpg';
-import qrImage from '../img/qr20220704235731787.png';
+import qrImage from '../img/qr20220226164636080.png';
 
 export default function HowToLogin() {
     return (
@@ -42,7 +42,7 @@ export default function HowToLogin() {
                 />
                 <Divider sx={{ mt: 3 }} />
                 <Typography sx={{ mt: 3 }}>
-                    2. アプリを開き、QRコードをスキャンしてFUROCK管理画面を登録してください。
+                    2. アプリを開き、QRコードをスキャンして管理画面を登録してください。
                 </Typography>
                 <img
                     alt=""

@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider';
 
 import googleStoreImage from '../img/140848.jpg';
 import appImage from '../img/140849.jpg';
-import qrImage from '../img/qr20220704235731787.png';
+import qrImage from '../img/qr20220226164636080.png';
 
 export default function HowToLogin() {
     return (
