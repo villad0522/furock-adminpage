@@ -15,7 +15,7 @@ export default function Preview({ version }) {
             <iframe
                 title="preview small"
                 src={
-                    "https://rentalserver-homepage.s3.ap-northeast-1.amazonaws.com/index.html?version="
+                    "https://rentalserver-app.s3.ap-northeast-1.amazonaws.com/index.html?media=tablet&version="
                     + version + "&oneTimeId=" + oneTimeId
                 }
                 style={{
