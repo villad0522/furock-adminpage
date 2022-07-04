@@ -85,7 +85,7 @@ export default function Versions() {
         }}>
             <Container sx={{ pt: '20px', }}>
                 <Typography variant="h5" >
-                    FUROCK ホームページ 管理画面
+                    レンタルサーバー 管理ページ
                 </Typography>
             </Container>
             <Container maxWidth="sm">

@@ -90,6 +90,12 @@ export default function App() {
           />
           <Tab
             component={Link}
+            label="サーバー代"
+            to="billing"
+            value="billing"
+          />
+          <Tab
+            component={Link}
             label="ログイン方法"
             to="howtologin"
             value="howtologin"

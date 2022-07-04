@@ -13,7 +13,6 @@ import actions from './actions';
 import Login from './components/Login';
 import WebDialog from './pages/WebDialog';
 import Versions from './pages/Versions';
-import Billing from './pages/Billing';
 import DeveloperLinks from './pages/DeveloperLinks';
 import HowToLogin from './pages/HowToLogin';
 
@@ -106,7 +105,6 @@ export default function App() {
         width: '100%',
       }}>
         <Routes>
-          <Route path="/billing/*" element={<Billing />} />
           <Route path="/howtologin/*" element={<HowToLogin />} />
           <Route path="/developer/*" element={<DeveloperLinks />} />
           <Route path="*" element={<Versions />} />
