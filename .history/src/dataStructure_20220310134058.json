@@ -1,68 +1,10 @@
 {
     "一般設定": [
         {
-            "type": "HEADLINE",
-            "label": "応募フォーム"
-        },
-        {
-            "key": "recruit_flag",
-            "type": "SWITCH",
-            "label": "新人を募集する",
-            "defaultValue": true
-        },
-        {
-            "key": "recruit_text",
+            "key": "title",
             "type": "TEXT_FIELD",
-            "label": "新人を募集する文章"
-        },
-        {
-            "key": "recruit_form",
-            "type": "TEXT_FIELD",
-            "label": "新人を募集するGoogleフォームのID"
-        },
-        {
-            "key": "recruit_stop_text",
-            "type": "TEXT_FIELD",
-            "label": "募集を締め切った場合の文章",
-            "multiline": true,
-            "rows": 8
-        },
-        {
-            "type": "DIVIDER"
-        },
-        {
-            "type": "HEADLINE",
-            "label": "問い合わせフォーム"
-        },
-        {
-            "key": "contact_flag",
-            "type": "SWITCH",
-            "label": "問い合わせフォームを公開する",
-            "defaultValue": true
-        },
-        {
-            "key": "recruit_form",
-            "type": "TEXT_FIELD",
-            "label": "お問い合わせのGoogleフォームのID"
-        },
-        {
-            "type": "DIVIDER"
-        },
-        {
-            "type": "HEADLINE",
-            "label": "トップページ"
-        },
-        {
-            "key": "univLogo",
-            "type": "IMAGE_UPLOADER",
-            "label": "大学ロゴ",
-            "width": 6
-        },
-        {
-            "key": "teamLogo",
-            "type": "IMAGE_UPLOADER",
-            "label": "チームロゴ",
-            "width": 6
+            "autoFocus": true,
+            "label": "ページタイトル"
         },
         {
             "key": "subtitle",
@@ -70,16 +12,17 @@
             "label": "サブタイトル"
         },
         {
+            "key": "topLogo",
+            "type": "IMAGE_UPLOADER",
+            "label": "お店のロゴ",
+            "width": 6
+        },
+        {
             "key": "text",
             "type": "TEXT_FIELD",
             "label": "文章",
             "multiline": true,
             "rows": 8
-        },
-        {
-            "key": "mail",
-            "type": "TEXT_FIELD",
-            "label": "メールアドレス"
         },
         {
             "key": "instagram",
@@ -99,7 +42,7 @@
         {
             "key": "line",
             "type": "TEXT_FIELD",
-            "label": "LINE公式アカウントのURL"
+            "label": "LINEのURL"
         },
         {
             "key": "googleMap",
@@ -107,39 +50,31 @@
             "label": "グーグルマップのURL"
         },
         {
+            "key": "stock",
+            "type": "TEXT_FIELD",
+            "label": "「在庫多数」と表示する下限値",
+            "defaultValue": 10
+        },
+        {
             "type": "DIVIDER"
         },
         {
             "type": "HEADLINE",
-            "label": "背景画像"
+            "label": "送料"
         },
         {
-            "key": "backimage",
-            "type": "IMAGE_UPLOADER",
+            "key": "postage_price",
+            "type": "TEXT_FIELD",
+            "label": "１回あたりの送料",
+            "defaultValue": 790,
             "width": 6
         },
         {
-            "key": "backimage_opacity",
-            "type": "SLIDER",
-            "label": "背景画像の透明度",
-            "defaultValue": 1,
-            "min": 0.0,
-            "max": 1.0,
-            "step": 0.01,
-            "marks": [
-                {
-                    "value": 0,
-                    "label": "透明"
-                },
-                {
-                    "value": 0.5,
-                    "label": "半透明"
-                },
-                {
-                    "value": 1.0,
-                    "label": "不透明"
-                }
-            ]
+            "key": "postage_weight",
+            "type": "TEXT_FIELD",
+            "label": "１回あたりの最大重量(g)",
+            "defaultValue": 1000,
+            "width": 6
         }
     ],
     "ページ（パソコン）": [
@@ -1912,14 +1847,33 @@
             "defaultValue": false
         }
     ],
-    "歴代ロケット": [
+    "商品": [
         {
             "key": "title",
             "type": "TEXT_FIELD",
             "autoFocus": true,
-            "label": "ロケット名",
+            "label": "商品名",
             "multiline": true,
             "rows": 3
+        },
+        {
+            "key": "price",
+            "type": "TEXT_FIELD",
+            "label": "税込価格"
+        },
+        {
+            "key": "maxNum",
+            "type": "TEXT_FIELD",
+            "label": "お一人様〇個まで",
+            "defaultValue": 50,
+            "width": 6
+        },
+        {
+            "key": "weight",
+            "type": "TEXT_FIELD",
+            "label": "重さ(g)（送料計算のみに使用）",
+            "defaultValue": 200,
+            "width": 6
         },
         {
             "key": "overview",
@@ -1970,140 +1924,261 @@
             "key": "list1_key",
             "type": "TEXT_FIELD",
             "label": "項目名",
-            "defaultValue": "全長",
+            "defaultValue": "原材料",
             "width": 6
         },
         {
             "key": "list1_text",
             "type": "TEXT_FIELD",
             "label": "文章",
-            "defaultValue": "2m12cm",
+            "defaultValue": "コーヒー豆",
             "width": 6
         },
         {
             "key": "list2_key",
             "type": "TEXT_FIELD",
             "label": "項目名",
-            "defaultValue": "外径",
+            "defaultValue": "豆原産国",
             "width": 6
         },
         {
             "key": "list2_text",
             "type": "TEXT_FIELD",
             "label": "文章",
-            "defaultValue": "30cm",
+            "defaultValue": "",
             "width": 6
         },
         {
             "key": "list3_key",
             "type": "TEXT_FIELD",
             "label": "項目名",
-            "defaultValue": "重量",
+            "defaultValue": "保存方法",
             "width": 6
         },
         {
             "key": "list3_text",
             "type": "TEXT_FIELD",
             "label": "文章",
-            "defaultValue": "12kg",
+            "defaultValue": "密閉容器に入れて冷蔵または冷凍保存",
             "width": 6
         },
         {
             "key": "list4_key",
             "type": "TEXT_FIELD",
             "label": "項目名",
-            "defaultValue": "燃焼方式",
+            "defaultValue": "賞味期限",
             "width": 6
         },
         {
             "key": "list4_text",
             "type": "TEXT_FIELD",
             "label": "文章",
-            "defaultValue": "ハイブリッド",
+            "defaultValue": "到着後およそ半年",
             "width": 6
         },
         {
             "key": "list5_key",
             "type": "TEXT_FIELD",
             "label": "項目名",
-            "defaultValue": "射場",
+            "defaultValue": "内容量",
             "width": 6
         },
         {
             "key": "list5_text",
             "type": "TEXT_FIELD",
             "label": "文章",
-            "defaultValue": "北九州市○○町洋上",
+            "defaultValue": "200g",
             "width": 6
         },
         {
             "key": "list6_key",
             "type": "TEXT_FIELD",
             "label": "項目名",
-            "defaultValue": "到達高度",
+            "defaultValue": "",
             "width": 6
         },
         {
             "key": "list6_text",
             "type": "TEXT_FIELD",
             "label": "文章",
-            "defaultValue": "900m",
-            "width": 6
-        },
-        {
-            "key": "list7_key",
-            "type": "TEXT_FIELD",
-            "label": "項目名",
             "defaultValue": "",
             "width": 6
         },
         {
-            "key": "list7_text",
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "オプションA"
+        },
+        {
+            "key": "optionA_name",
             "type": "TEXT_FIELD",
-            "label": "文章",
-            "defaultValue": "",
+            "label": "オプション名",
+            "defaultValue": "挽き具合"
+        },
+        {
+            "key": "optionA_1",
+            "type": "TEXT_FIELD",
+            "label": "選択肢１",
+            "defaultValue": "豆のまま",
             "width": 6
         },
         {
-            "key": "list8_key",
+            "key": "optionA_1_price",
             "type": "TEXT_FIELD",
-            "label": "項目名",
-            "defaultValue": "",
+            "label": "追加料金",
+            "defaultValue": 0,
             "width": 6
         },
         {
-            "key": "list8_text",
+            "key": "optionA_2",
             "type": "TEXT_FIELD",
-            "label": "文章",
-            "defaultValue": "",
+            "label": "選択肢２",
+            "defaultValue": "粗挽き",
             "width": 6
         },
         {
-            "key": "list9_key",
+            "key": "optionA_2_price",
             "type": "TEXT_FIELD",
-            "label": "項目名",
-            "defaultValue": "",
+            "label": "追加料金",
+            "defaultValue": 0,
             "width": 6
         },
         {
-            "key": "list9_text",
+            "key": "optionA_3",
             "type": "TEXT_FIELD",
-            "label": "文章",
-            "defaultValue": "",
+            "label": "選択肢３",
+            "defaultValue": "中挽き",
             "width": 6
         },
         {
-            "key": "list10_key",
+            "key": "optionA_3_price",
             "type": "TEXT_FIELD",
-            "label": "項目名",
-            "defaultValue": "",
+            "label": "追加料金",
+            "defaultValue": 0,
             "width": 6
         },
         {
-            "key": "list10_text",
+            "key": "optionA_4",
             "type": "TEXT_FIELD",
-            "label": "文章",
-            "defaultValue": "",
+            "label": "選択肢４",
+            "defaultValue": "細挽き",
+            "width": 6
+        },
+        {
+            "key": "optionA_4_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "defaultValue": 0,
+            "width": 6
+        },
+        {
+            "key": "optionA_5",
+            "type": "TEXT_FIELD",
+            "label": "選択肢５",
+            "width": 6
+        },
+        {
+            "key": "optionA_5_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionA_6",
+            "type": "TEXT_FIELD",
+            "label": "選択肢６",
+            "width": 6
+        },
+        {
+            "key": "optionA_6_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "type": "DIVIDER"
+        },
+        {
+            "type": "HEADLINE",
+            "label": "オプションB"
+        },
+        {
+            "key": "optionB_name",
+            "type": "TEXT_FIELD",
+            "label": "オプション名"
+        },
+        {
+            "key": "optionB_1",
+            "type": "TEXT_FIELD",
+            "label": "選択肢１",
+            "width": 6
+        },
+        {
+            "key": "optionB_1_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_2",
+            "type": "TEXT_FIELD",
+            "label": "選択肢２",
+            "width": 6
+        },
+        {
+            "key": "optionB_2_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_3",
+            "type": "TEXT_FIELD",
+            "label": "選択肢３",
+            "width": 6
+        },
+        {
+            "key": "optionB_3_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_4",
+            "type": "TEXT_FIELD",
+            "label": "選択肢４",
+            "width": 6
+        },
+        {
+            "key": "optionB_4_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_5",
+            "type": "TEXT_FIELD",
+            "label": "選択肢５",
+            "width": 6
+        },
+        {
+            "key": "optionB_5_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
+            "width": 6
+        },
+        {
+            "key": "optionB_6",
+            "type": "TEXT_FIELD",
+            "label": "選択肢６",
+            "width": 6
+        },
+        {
+            "key": "optionB_6_price",
+            "type": "TEXT_FIELD",
+            "label": "追加料金",
             "width": 6
         }
     ]
