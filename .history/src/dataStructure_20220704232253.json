@@ -145,15 +145,6 @@
                     "label": "不透明"
                 }
             ]
-        },
-        {
-            "type": "DIVIDER"
-        },
-        {
-            "key": "twitter_embed_flag",
-            "type": "SWITCH",
-            "label": "twitterのタイムラインを埋め込む",
-            "defaultValue": true
         }
     ],
     "ページ（パソコン）": [

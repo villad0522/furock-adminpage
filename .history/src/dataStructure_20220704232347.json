@@ -150,7 +150,7 @@
             "type": "DIVIDER"
         },
         {
-            "key": "twitter_embed_flag",
+            "key": "contact_flag",
             "type": "SWITCH",
             "label": "twitterのタイムラインを埋め込む",
             "defaultValue": true
