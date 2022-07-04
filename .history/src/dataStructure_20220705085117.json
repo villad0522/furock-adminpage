@@ -77,11 +77,6 @@
             "rows": 8
         },
         {
-            "key": "twitter",
-            "type": "TEXT_FIELD",
-            "label": "ツイッターのアカウントID"
-        },
-        {
             "key": "mail",
             "type": "TEXT_FIELD",
             "label": "メールアドレス"
@@ -100,6 +95,11 @@
             "key": "facebook",
             "type": "TEXT_FIELD",
             "label": "フェイスブックのURL"
+        },
+        {
+            "key": "twitter",
+            "type": "TEXT_FIELD",
+            "label": "ツイッターのアカウントID"
         },
         {
             "key": "line",
