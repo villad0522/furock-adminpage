@@ -11,11 +11,6 @@
             "defaultValue": true
         },
         {
-            "key": "recruit_text",
-            "type": "TEXT_FIELD",
-            "label": "新人を募集する文章"
-        },
-        {
             "key": "recruit_form",
             "type": "TEXT_FIELD",
             "label": "新人を募集するGoogleフォームのID"
@@ -51,12 +46,6 @@
         {
             "type": "HEADLINE",
             "label": "トップページ"
-        },
-        {
-            "key": "univLogo",
-            "type": "IMAGE_UPLOADER",
-            "label": "大学ロゴ",
-            "width": 6
         },
         {
             "key": "teamLogo",
