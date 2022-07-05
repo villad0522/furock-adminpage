@@ -36,7 +36,7 @@
             "defaultValue": true
         },
         {
-            "key": "recruit_form",
+            "key": "contact_form",
             "type": "TEXT_FIELD",
             "label": "お問い合わせのGoogleフォームのID"
         },
