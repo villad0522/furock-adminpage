@@ -1925,11 +1925,12 @@
             "rows": 3
         },
         {
-            "key": "overview",
+            "key": "date",
             "type": "TEXT_FIELD",
-            "label": "簡易説明文",
+            "label": "完成時期",
             "multiline": true,
-            "rows": 2
+            "rows": 2,
+            "defaultValue": "2022年10月"
         },
         {
             "key": "text",
