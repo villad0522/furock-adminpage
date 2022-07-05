@@ -325,7 +325,7 @@ const MyInput = ({ item, property }) => {
             return;
         }
         setReady(true);
-        if (item[property.key] || item[property.key] === 0 || item[property.key] === false) {
+        if (item[property.key] || item[property.key] === 0) {
             return;
         }
         if (!property.defaultValue && property.defaultValue !== 0) {

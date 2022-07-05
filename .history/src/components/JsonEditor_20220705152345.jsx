@@ -325,7 +325,7 @@ const MyInput = ({ item, property }) => {
             return;
         }
         setReady(true);
-        if (item[property.key] || item[property.key] === 0 || item[property.key] === false) {
+        if (item[property.key] || item[property.key] === 0) {
             return;
         }
         if (!property.defaultValue && property.defaultValue !== 0) {
@@ -393,17 +393,16 @@ const MyInput = ({ item, property }) => {
             <FormControlLabel
                 control={
                     <Switch
-                        key={property.key}
-                        checked={item[property.key] ? true : false}
-                        onChange={(event) => {
-                            console.log(event.target.checked);
-                            dispatch(actions?.json.edit(property.key, event.target.checked))
-                        }}
-                    />
-                }
-                label={property.label}
+                        value={item[property.key] ? true : false}
+                        onChange={(event, newValue) => {
+                            dispatch(actions?.json.edit(property.key, newValue)
+                        })
+                        }
             />
+                }
+    label = { property.label }
+        />
         );
     }
-    return null;
+return null;
 }
