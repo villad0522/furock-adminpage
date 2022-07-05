@@ -3,21 +3,13 @@ import { select, put } from 'redux-saga/effects';
 import axios from 'axios';
 import actions from '../../actions';
 
-export default function* getJsonItems({ payload: { fileName } }) {
+export default function* getVersionDatas() {
     const oneTimeId = yield select(state => state?.auth?.oneTimeId);
-    let url = 'https://epn63s2g5a.execute-api.ap-northeast-1.amazonaws.com/production/s3/rentalserver-json/draft/'
-        + fileName + '?oneTimeId=' + oneTimeId;
+    let url = 'https://epn63s2g5a.execute-api.ap-northeast-1.amazonaws.com/production/s3/rentalserver-json/versions.json?oneTimeId=' + oneTimeId;
     //
     console.log("ロード開始 " + url);
     try {
-        const res = yield axios.get(
-            url,
-            {
-                params: {
-                    timestamp: new Date().getTime(),    //キャッシュ対策
-                }
-            }
-        );
+        const res = yield axios.get(url);
         //###########################################################################
         if (typeof res.data === "string") {
             if (res.data === 'PLEASE LOGIN') {
@@ -33,7 +25,7 @@ export default function* getJsonItems({ payload: { fileName } }) {
         }
         //###########################################################################
         console.log("ロード完了");
-        yield put(actions?.json.setAll(fileName, res.data));
+        yield put(actions?.versions?.setVersionDatas(res.data));
     }
     catch (e) {
         //alert('ネットワークエラー');

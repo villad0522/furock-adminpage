@@ -10,12 +10,7 @@ export default function* loginCheck(oneTimeId) {
     try {
         const res = yield axios.get(
             'https://epn63s2g5a.execute-api.ap-northeast-1.amazonaws.com/production/auth?'
-            + 'oneTimeId=' + oneTimeId,
-            {
-                params: {
-                    timestamp: new Date().getTime(),    //キャッシュ対策
-                }
-            }
+            + 'oneTimeId=' + oneTimeId
         );
         if (typeof res.data === "string") {
             yield put(actions?.auth?.setVerifiedFlag(false));

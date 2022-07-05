@@ -9,15 +9,14 @@ export default function Preview({ version }) {
             sx={{
                 mx: 'auto',
                 maxWidth: '100%',
-                width: '428px',
+                width: '800px',
             }}
         >
             <iframe
                 title="preview small"
                 src={
-                    "https://rentalserver-app.s3.ap-northeast-1.amazonaws.com/index.html?media=mobile&version="
-                    + version + "&oneTimeId=" + oneTimeId + "&timestamp=" + (new Date().getTime())
-                    //キャッシュ対策でタイムスタンプを入れる
+                    "https://rentalserver-app.s3.ap-northeast-1.amazonaws.com/index.html?media=tablet&version="
+                    + version + "&oneTimeId=" + oneTimeId
                 }
                 style={{
                     margin: 0,

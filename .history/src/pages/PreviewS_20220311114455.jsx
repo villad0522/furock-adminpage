@@ -16,8 +16,7 @@ export default function Preview({ version }) {
                 title="preview small"
                 src={
                     "https://rentalserver-app.s3.ap-northeast-1.amazonaws.com/index.html?media=mobile&version="
-                    + version + "&oneTimeId=" + oneTimeId + "&timestamp=" + (new Date().getTime())
-                    //キャッシュ対策でタイムスタンプを入れる
+                    + version + "&oneTimeId=" + oneTimeId
                 }
                 style={{
                     margin: 0,

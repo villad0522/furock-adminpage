@@ -10,14 +10,7 @@ export default function* getJsonItems({ payload: { fileName } }) {
     //
     console.log("ロード開始 " + url);
     try {
-        const res = yield axios.get(
-            url,
-            {
-                params: {
-                    timestamp: new Date().getTime(),    //キャッシュ対策
-                }
-            }
-        );
+        const res = yield axios.get(url);
         //###########################################################################
         if (typeof res.data === "string") {
             if (res.data === 'PLEASE LOGIN') {
